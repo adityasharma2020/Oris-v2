@@ -7,6 +7,7 @@ import FileInput from '../../components/fileInput/FileInput';
 import { DataContext } from '../../context/DataContext';
 import { useContext } from 'react';
 
+
 const Home = () => {
   const { currentFile } = useContext(DataContext);
 
@@ -46,7 +47,7 @@ const Home = () => {
             </div>
             <div className='main'>
               <Featured />
-            
+             
             </div>
           </>
         ) : (

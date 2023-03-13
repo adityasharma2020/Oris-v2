@@ -10,6 +10,7 @@ import { useContext } from 'react';
 import { DarkModeContext } from './context/darkModeContext';
 import { AuthContext } from './context/AuthContext';
 import Graph from './pages/Graph/Graph';
+import ReChartGraph from './pages/ReChartGraph/ReChartGraph';
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -36,6 +37,7 @@ function App() {
             />
 
             <Route path='graph' element={<Graph />} />
+            <Route path='regraph' element={<ReChartGraph />} />
             {/* <Route path='users'>
               <Route
                 index
