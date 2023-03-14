@@ -1,23 +1,23 @@
-import SidebarItem from "./SidebarItem"
-import items from "../../data/sidebar.json"
-import "./sidebar.css"
+import SidebarItem from './SidebarItem';
+import items from '../../data/sidebar.json';
+import './sidebar.css';
+import { Link } from 'react-router-dom';
 
-
-export default function Sidebar(){
-    return (
-        <>
-       
-
-        <div className="sidebar">
-        <h1>ORIS</h1>
-        <hr/>
-          { items.map((item, index) => <SidebarItem key={index} item={item} />) }
-        </div>
-        </>
-    )
+export default function Sidebar() {
+  return (
+    <>
+      <div className='sidebar'>
+        <Link to='/'>
+          <h1>ORIS</h1>
+        </Link>
+        <hr />
+        {items.map((item, index) => (
+          <SidebarItem key={index} item={item} />
+        ))}
+      </div>
+    </>
+  );
 }
-
-
 
 // import './sidebar.scss';
 // const Sidebar = () => {
@@ -42,7 +42,7 @@ export default function Sidebar(){
 //           <li>
 //             <span>Dashboard</span>
 //           </li>
-          
+
 //         </ul>
 //       </div>
 //       <div className='bottom'>color options</div>

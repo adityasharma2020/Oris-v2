@@ -17,6 +17,7 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
+  Brush,
   ResponsiveContainer,
 } from 'recharts';
 
@@ -97,6 +98,9 @@ const ReChartGraph = () => {
                   fill='url(#splitColor)'
                 />
               </AreaChart>
+              
+
+              
             </div>
           </>
         ) : (

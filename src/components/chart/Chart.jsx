@@ -72,6 +72,7 @@ function Chart() {
       //   type: 'datetime',
       // },
     },
+  
 
     // seriesLine: [
     //   {

@@ -4,7 +4,7 @@ import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import MonetizationOnOutlinedIcon from '@mui/icons-material/MonetizationOnOutlined';
-import { CircularProgressbar } from 'react-circular-progressbar';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 const Widget = ({ type, color, currentFile }) => {
@@ -107,7 +107,7 @@ const Widget = ({ type, color, currentFile }) => {
             strokeWidth={8}
           />
         </span>
-        <span className='link'>{data.link}</span>
+        {/* <span className='link'>{data.link}</span> */}
       </div>
       <div className='right'>
         <div className='percentage positive'>

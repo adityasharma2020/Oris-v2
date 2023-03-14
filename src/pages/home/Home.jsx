@@ -4,6 +4,7 @@ import './home.scss';
 import Widget from '../../components/widgets/Widget';
 import Featured from '../../components/featured/Featured';
 import FileInput from '../../components/fileInput/FileInput';
+import FileView from  "../../components/fileview/FileView"
 import { DataContext } from '../../context/DataContext';
 import { useContext } from 'react';
 
@@ -47,11 +48,13 @@ const Home = () => {
             </div>
             <div className='main'>
               <Featured />
+              <FileView/>
              
             </div>
           </>
         ) : (
           <FileInput />
+          
         )}
       </div>
     </div>

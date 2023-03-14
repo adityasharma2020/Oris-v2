@@ -2,12 +2,15 @@ import './radialChart.scss';
 import React, { Component } from 'react';
 import ReactApexChart from 'react-apexcharts';
 
+
 class App extends Component {
   constructor(props) {
     super(props);
 
+    
+
     this.state = {
-      series: [76, 67, 61, 90],
+      series: [28, 28, 22, 22],
       options: {
         chart: {
           height: 5000,
@@ -34,7 +37,7 @@ class App extends Component {
             },
           },
         },
-        colors: ['#1ab7ea', '#0084ff', '#39539E', '#0077B5'],
+        colors: ['#fe5858', '#f3ab4c', '#b3b3b3', '#44e59d'],
         labels: ['No of A', 'No of T', 'No of C', 'No of G'],
         legend: {
           show: true,

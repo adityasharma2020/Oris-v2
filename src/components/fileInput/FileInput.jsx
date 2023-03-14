@@ -1,5 +1,8 @@
 import React, { useContext } from 'react';
+import "./fileInput.scss"
 import { DataContext } from '../../context/DataContext';
+import DriveFolderUploadOutlined from '@mui/icons-material/DriveFolderUploadOutlined';
+
 
 const FileInput = ({ className }) => {
   const { dispatch } = useContext(DataContext);
@@ -40,8 +43,12 @@ const FileInput = ({ className }) => {
   };
 
   return (
-    <div>
-      <input type='file' id='file' onChange={fileUpload} />
+    <div className='fileupload' style={{ display: "flex",alignItems:"center",justifyContent:"center",height:"50vh",color: "white",fontSize:'20px', margin: "200px 450px 100px 450px",border:"2px dashed white",boxShadow: "2px 4px 10px 1px rgba(201, 201, 201, 0.47)",backgroundColor:"#1f202f"}}>
+      <label htmlFor='file'  >
+        File: <DriveFolderUploadOutlined className='icon'  />
+      </label>
+
+      <input type='file' id='file' accept=".fna" onChange={fileUpload} />
     </div>
   );
 };

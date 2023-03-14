@@ -9,15 +9,25 @@
               "path": "/"
           },
           {
-              "title": "Graph",
+              "title": "Apex (Graph)",
               "icon": "bi-info-circle-fill",
               "path": "/graph"
           },
           {
-              "title": "ReGraph",
+              "title": "GC Skew (ReGraph)",
               "icon": "bi-info-circle-fill",
               "path": "/regraph"
           },
+          {
+              "title": "GC SKew (ZoomGraph)",
+              "icon": "bi-info-circle-fill",
+              "path": "/zoomgraph"
+          },
+          {
+            "title": "GC Skew(Brushing)",
+            "icon": "bi-info-circle-fill",
+            "path": "/BrushRechart"
+        },
           {
               "title": "Contact",
               "icon": "bi-phone-fill",
