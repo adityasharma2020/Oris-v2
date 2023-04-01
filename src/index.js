@@ -8,11 +8,11 @@ import { DataContextProvider } from './context/DataContext';
 ReactDOM.render(
   <React.StrictMode>
     <DarkModeContextProvider>
-      <AuthContextProvider>
+    
         <DataContextProvider>
           <App />
         </DataContextProvider>
-      </AuthContextProvider>
+     
     </DarkModeContextProvider>
   </React.StrictMode>,
   document.getElementById('root')

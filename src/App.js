@@ -12,7 +12,7 @@ import { AuthContext } from './context/AuthContext';
 import Graph from './pages/Graph/Graph';
 import ReChartGraph from './pages/ReChartGraph/ReChartGraph';
 import ZoomGraph from './pages/ZoomGraph/ZoomGraph';
-import BrushRechart from "./pages/brushRechart/BrushRechart.jsx"
+import BrushRechart from './pages/brushRechart/BrushRechart.jsx';
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -29,14 +29,7 @@ function App() {
         <Routes>
           <Route path='/'>
             <Route path='login' element={<Login />} />
-            <Route
-              index
-              element={
-                <RequireAuth>
-                  <Home />
-                </RequireAuth>
-              }
-            />
+            <Route index element={<Home />} />
 
             <Route path='graph' element={<Graph />} />
             <Route path='regraph' element={<ReChartGraph />} />
