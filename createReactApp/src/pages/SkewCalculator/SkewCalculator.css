@@ -1,0 +1,201 @@
+.skewCalc-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skewCalc-container h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: white;
+}
+
+.skewCalc-container input {
+  width: 70%;
+  height: 50px;
+  margin: 20px 40px;
+  -webkit-box-shadow: inset #abacaf 0 0 0 2px;
+          box-shadow: inset #abacaf 0 0 0 2px;
+  border: 0;
+  background: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  border-radius: 3px;
+  padding: 9px 12px;
+  line-height: 1.4;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.skewCalc-container input:hover {
+  -webkit-box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 2px;
+          box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 2px;
+}
+
+.skewCalc-container input:focus {
+  background: #fff;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
+          box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
+}
+
+.skewCalc-container button {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 30px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #00c7ec;
+  border: 1px solid #00c7ec;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 0 transparent;
+          box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.skewCalc-container button:hover {
+  color: white;
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 199, 236, 0.5);
+          box-shadow: 0 0 30px 0 rgba(0, 199, 236, 0.5);
+  background-color: #00c7ec;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.skewCalc-container button:hover:before {
+  -webkit-animation: shine 0.5s 0s linear;
+          animation: shine 0.5s 0s linear;
+}
+
+.skewCalc-container button:active {
+  -webkit-box-shadow: 0 0 0 0 transparent;
+          box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in;
+  transition: -webkit-box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
+}
+
+.skewCalc-container button:before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: white;
+  -webkit-box-shadow: 0 0 15px 3px white;
+          box-shadow: 0 0 15px 3px white;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+}
+
+.skewCalc-container-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 150px;
+  margin-top: 70px;
+}
+
+.skewCalc-container-buttons-left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 70px 70px 70px;
+      grid-template-rows: 70px 70px 70px;
+  -ms-grid-columns: 70px 70px 70px;
+      grid-template-columns: 70px 70px 70px;
+  gap: 40px;
+}
+
+.skewCalc-container-buttons-right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 70px 70px 70px;
+      grid-template-rows: 70px 70px 70px;
+  -ms-grid-columns: 70px 70px 70px;
+      grid-template-columns: 70px 70px 70px;
+  gap: 40px;
+}
+
+.skewCalc-container-specialbuttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 150px;
+  margin-top: 70px;
+}
+
+.skewCalc-container-specialbuttons-left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70px 70px 70px;
+      grid-template-columns: 70px 70px 70px;
+  -ms-grid-rows: 50px;
+      grid-template-rows: 50px;
+  gap: 40px;
+}
+
+.skewCalc-container-specialbuttons-right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70px 70px 70px;
+      grid-template-columns: 70px 70px 70px;
+  -ms-grid-rows: 50px;
+      grid-template-rows: 50px;
+  gap: 40px;
+}
+
+.skewCalc-container-search-button {
+  width: 35%;
+  margin: 50px 0;
+  font-size: 20px !important;
+  padding: 10px !important;
+}
+
+@-webkit-keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+@keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+/*# sourceMappingURL=SkewCalculator.css.map */

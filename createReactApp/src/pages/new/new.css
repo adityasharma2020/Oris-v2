@@ -1,0 +1,83 @@
+.new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.newContainer {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+}
+
+.newContainer .top {
+  -webkit-box-shadow: 2px 4px 10px 1px red;
+          box-shadow: 2px 4px 10px 1px red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.newContainer h1 {
+  color: lightgray;
+  font-size: 20px;
+}
+
+.newContainer .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.newContainer img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.newContainer .right {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+form .formInput {
+  width: 40%;
+}
+
+form .formInput label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+form .formInput label .icon {
+  cursor: pointer;
+}
+
+form .formInput .input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+form button {
+  display: block;
+}
+/*# sourceMappingURL=new.css.map */

@@ -1,0 +1,36 @@
+.homeContainer {
+  background-color: #343f58;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+}
+
+.btn {
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  padding: 0.75em 1em;
+  font-size: 1em;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: #863100;
+  color: #000000;
+}
+
+.widgets,
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.main {
+  padding: 5px 20px;
+}
+/*# sourceMappingURL=Graph.css.map */

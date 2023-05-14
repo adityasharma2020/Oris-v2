@@ -1,0 +1,116 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.brushChartContainer .brushChart {
+  background-color: #96c9dc;
+}
+
+.brushChartContainer .table-container {
+  width: 70%;
+  margin: 20px auto;
+  overflow: auto;
+}
+
+.brushChartContainer .input {
+  position: relative;
+  display: block;
+  margin: 30px 0;
+}
+
+.brushChartContainer .input__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 5px 5px;
+  margin: 5px 5px;
+  background: pink;
+  white-space: nowrap;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  background: white;
+  -webkit-transition: -webkit-transform 120ms ease-in;
+  transition: -webkit-transform 120ms ease-in;
+  transition: transform 120ms ease-in;
+  transition: transform 120ms ease-in, -webkit-transform 120ms ease-in;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.brushChartContainer .input__field {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 3px solid black;
+  padding: 10px 10px;
+  color: black;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.brushChartContainer .input__field:focus + .input__label, .brushChartContainer .input__field:not(:placeholder-shown) + .input__label {
+  -webkit-transform: translate(5px, -65%) scale(0.8);
+          transform: translate(5px, -65%) scale(0.8);
+  color: #fab700;
+}
+
+.brushChartContainer .submit-button {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  background-color: #fab700;
+  background-image: none;
+  border: 1px solid #fab700;
+  border-radius: 4px;
+  -webkit-box-shadow: #fff 4px 4px 0 0, #fab700 4px 4px 0 1px;
+          box-shadow: #fff 4px 4px 0 0, #fab700 4px 4px 0 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 auto;
+  width: 50%;
+  display: block;
+  overflow: visible;
+  padding: 5px 40px;
+  text-align: center;
+  text-transform: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.brushChartContainer .submit-button:focus {
+  text-decoration: none;
+}
+
+.brushChartContainer .submit-button:hover {
+  text-decoration: none;
+}
+
+.brushChartContainer .submit-button:active {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+          box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.brushChartContainer .submit-button:not([disabled]):active {
+  -webkit-box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+          box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+}
+/*# sourceMappingURL=BrushRechart.css.map */

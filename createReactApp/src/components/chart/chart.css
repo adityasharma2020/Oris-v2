@@ -1,0 +1,13 @@
+.chart {
+  width: 100vw;
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+
+#chart {
+  max-width: 82vw;
+}
+/*# sourceMappingURL=chart.css.map */

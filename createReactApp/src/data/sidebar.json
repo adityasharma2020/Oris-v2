@@ -1,0 +1,142 @@
+[
+  {
+    "title": "OriginFinder",
+    "icon": "bi-gear-fill",
+    "childrens": [
+      {
+        "title": "Cummulative Skew ",
+        "icon": "bi-house-fill",
+        "path": "/"
+      },
+      {
+        "title": "AT skew",
+        "icon": "bi-info-circle-fill",
+        "path": "/graph"
+      },
+      {
+        "title": "MK skew",
+        "icon": "bi-info-circle-fill",
+        "path": "/regraph"
+      },
+      {
+        "title": "GC SKew (ZoomGraph)",
+        "icon": "bi-info-circle-fill",
+        "path": "/zoomgraph"
+      },
+      {
+        "title": "GC Skew (Brushing)",
+        "icon": "bi-info-circle-fill",
+        "path": "/BrushRechart"
+      },
+      {
+        "title": "Skew Calculator",
+        "icon": "bi-question-circle-fill",
+        "path": "/skew-calculator"
+      },
+      {
+        "title": "Contact",
+        "icon": "bi-phone-fill",
+        "childrens": [
+          {
+            "title": "Facebook",
+            "icon": "bi-facebook"
+          },
+          {
+            "title": "Twitter",
+            "icon": "bi-twitter"
+          },
+          {
+            "title": "Instagram",
+            "icon": "bi-instagram"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Pattern Search",
+    "icon": "bi-info-circle-fill",
+    "childrens": [
+      {
+        "title": "Sequence Search",
+        "path": "/search-sequence"
+      },
+      {
+        "title": "Register",
+        "path": "/register"
+      },
+      {
+        "title": "Forgot Password",
+        "path": "/forgot-password"
+      },
+      {
+        "title": "Reset Password",
+        "path": "/reset-password"
+      }
+    ]
+  },
+  {
+    "title": "Profile",
+    "icon": "bi-person-fill",
+    "childrens": [
+      {
+        "title": "Profile",
+        "path": "/profile"
+      },
+      {
+        "title": "Settings",
+        "childrens": [
+          {
+            "title": "Account",
+            "path": "/settings/account"
+          },
+          {
+            "title": "Billing",
+            "childrens": [
+              {
+                "title": "Payment",
+                "path": "/settings/billing/payment"
+              },
+              {
+                "title": "Subscription",
+                "path": "/settings/billing/subscription"
+              }
+            ]
+          },
+          {
+            "title": "Notifications",
+            "path": "/settings/notifications"
+          }
+        ]
+      },
+      {
+        "title": "Logout",
+        "path": "/logout"
+      }
+    ]
+  },
+  {
+    "title": "Advance",
+    "icon": "bi-view-list",
+    "childrens": [
+      {
+        "title": "Search",
+        "path": "/search"
+      },
+      {
+        "title": "History",
+        "path": "/history"
+      }
+    ]
+  },
+  {
+    "title": "Support",
+    "icon": "bi-question-circle-fill",
+    "path": "/support"
+  },
+  {
+    "title": "Report Bug",
+    "icon": "bi-bug",
+    "path": "/report-bug"
+  }
+]
